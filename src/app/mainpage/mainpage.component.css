@@ -1,0 +1,65 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+  }
+  
+  /* Introduction Section */
+  .introduction {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+ p{
+    font-size: 50px;
+    line-height: 1.5;
+    color: white;
+  }
+  
+  /* Image Section */
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: calc(33.333% - 10px); /* Adjust the width and gap as needed */
+    height: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .intro{
+    padding-top:10px;
+    background-color: black;
+  }
+  mat-card{
+    background-color: whitesmoke;
+    border: 5px solid gray;
+    margin-right: 10px;
+     width: 500px; 
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .services{
+    display:flex;
+  }
+  /* You can add additional styling for individual images if needed */
+  
+  /* If you have only two images, you can adjust the width like this:
+  .image-container img {
+    width: 49%;
+  }
+  */
+  

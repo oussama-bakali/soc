@@ -1,0 +1,30 @@
+
+<div class="main">
+<div class="login-container">
+
+    <mat-card class="card-container">
+        <mat-card-title>Login</mat-card-title>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      
+        
+        <br>
+        <input matInput formControlName="email" type="email" placeholder="Enter your email" class="custom-mat-input">
+        <mat-error *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched">
+            Please enter a valid email address.
+          </mat-error>
+     
+  
+      
+        
+        <input matInput formControlName="password" type="password" placeholder="Enter your password" class="custom-mat-input">
+        <mat-error *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
+            Please enter a password (minimum 8 characters).
+          </mat-error>
+          <button mat-raised-button  type="submit" [disabled]="loginForm.invalid">Login</button>
+  
+      
+    </form>
+</mat-card>
+
+  </div>
+</div>
